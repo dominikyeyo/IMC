@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d(TAG, "Entra a calcular IMC con el click");
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         EditText editTextAltura = (EditText) findViewById(R.id.editTextCentimetros);
-        EditText editTextPeso = (EditText) findViewById(R.id.editTextCentimetros);
+        EditText editTextPeso = (EditText) findViewById(R.id.editTextKiloGramos);
 
         String altura = editTextAltura.getText().toString();
         String peso = editTextPeso.getText().toString();
@@ -79,9 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i(TAG,"resultado" + resultado);
 
-        textViewResult.setText( resultado
-        );
-
+        textViewResult.setText( resultado );
 
     }
 
